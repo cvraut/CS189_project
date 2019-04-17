@@ -1,0 +1,5 @@
+bayanus_uvarum_strain_CBS7001 /data/smol/suvarum_cbs7001.fasta
+cerevisiae_strain_S288C /data/smol/S288C_reference.fasta
+cerevisiae_strain_W303 /data/smol/W303_reference.fasta
+cerevisiae_strain_SK1 /data/smol/SK1_reference.fasta
+cerevisiae_strain_g833-1B /data/smol/g833-1B_reference.fasta
