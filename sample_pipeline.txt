@@ -16,3 +16,16 @@ BlockDisplaySatsuma -i outputs
 cactus jobStore data/smol/yeast.txt outputs/yeast.hal --binariesMode local
 ## return phylogenic tree of genome.
 halStats outputs/yeast.hal --tree
+## find structural variants
+conda install mummer
+## use mahul's c++ code
+git clone https://github.com/mahulchak/svmu
+cd svmu
+make
+## compare yeasts to ref
+nucmer -maxmatch -prefix sam2ref.mm ref.fasta sample.fasta
+## find structural variants
+svmu sam2ref.mm.delta ref.fasta sample.fasta n snp_mode> sample.small.txt
+
+## use the data the programs generated here for cool visualizations:
+## ...
