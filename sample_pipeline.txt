@@ -5,6 +5,8 @@ conda create -name cg_yeast
 conda activate cg_yeast
 conda install catcus
 conda install satsumasynteny2
+conda install ngmlr
+conda install sniffles
 ## add bin to path
 export SATSUMA2_PATH=~/bin/miniconda3/envs/cg_yeast/bin/
 ## run satsuma
@@ -17,15 +19,7 @@ cactus jobStore data/smol/yeast.txt outputs/yeast.hal --binariesMode local
 ## return phylogenic tree of genome.
 halStats outputs/yeast.hal --tree
 ## find structural variants
-conda install mummer
-## use mahul's c++ code
-git clone https://github.com/mahulchak/svmu
-cd svmu
-make
-## compare yeasts to ref
-nucmer -maxmatch -prefix sam2ref.mm ref.fasta sample.fasta
-## find structural variants
-svmu sam2ref.mm.delta ref.fasta sample.fasta n snp_mode> sample.small.txt
-
-## use the data the programs generated here for cool visualizations:
-## ...
+## process pacbio genome into sam file
+ngmlr -t 4 -r g833-1B_reference.fasta -q reads.fastq -o test.sam
+##use sniffles for svs.
+sniffles -m test.sam -v output.vcf
