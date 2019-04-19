@@ -23,3 +23,4 @@ halStats outputs/yeast.hal --tree
 ngmlr -t 4 -r g833-1B_reference.fasta -q reads.fastq -o test.sam
 ##use sniffles for svs.
 sniffles -m test.sam -v output.vcf
+##...more codes for visualization from sniffles.
