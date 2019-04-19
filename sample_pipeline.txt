@@ -9,6 +9,8 @@ conda install satsumasynteny2
 export SATSUMA2_PATH=~/bin/miniconda3/envs/cg_yeast/bin/
 ## run satsuma
 SatsumaSynteny2 -q data/smol/g833-1B_reference.fasta -t data/smol/suvarum_cbs7001.fasta -o outputs
+ChromosomePaint -o outputs
+BlockDisplaySatsuma -i outputs
 ## run cactus (if docker or singularity use those, not local)
 cactus jobStore data/smol/yeast.txt outputs/yeast.hal --binariesMode local
 halStats outputs/yeast.hal --tree
