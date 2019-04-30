@@ -15,9 +15,8 @@ cd /pub/{$USER}/CS189_project
 conda --version
 conda activate cg_yeast
 ## cactus -h
-cd jobStore
-rm -rf *.*
-cd ..
+rm -rf jobStore
+
 cactus jobStore yeast.txt outputs/yeast.hal --binariesMode local
 
 conda deactivate
