@@ -31,10 +31,15 @@ export SATSUMA2_PATH=~/bin/miniconda3/envs/cg_yeast/bin/
 #mkdir ./outputs/W303_reference
 #SatsumaSynteny2 -q data/g833-1B_reference.fasta -t data/W303_reference.fasta -o outputs/W303_reference
 
-
-SEED=(head -n ${SGE_ARRAY_TASK_ID} $JOBFILE | tail -n 1)
+cd data
+REF=$(ls -1c *.fasta | head -n 1)
+SEED=$(ls -1c *.fasta | head -n ${SGE_ARRAY_TASK_ID+1} | tail -n 1)
+cd ..
 rm -rf ./outputs/${SEED}
 mkdir -p ./outputs/${SEED}
-SatsumaSynteny2 -q data/g833-1B_reference.fasta -t data/${SEED}.fasta -o outputs/${SEED}
+
+echo "${SEED}"
+
+SatsumaSynteny2 -q data/${REF} -t data/${SEED} -o outputs/${SEED}
 
 conda deactivate
