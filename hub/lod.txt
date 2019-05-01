@@ -1,0 +1,9 @@
+0 yeast.hal
+8697 lod/yeast_lod_98.hal
+21854 lod/yeast_lod_245.hal
+54635 lod/yeast_lod_612.hal
+136476 lod/yeast_lod_1531.hal
+341413 lod/yeast_lod_3829.hal
+853867 lod/yeast_lod_9574.hal
+2135002 lod/yeast_lod_23935.hal
+5337505 lod/yeast_lod_59837.hal

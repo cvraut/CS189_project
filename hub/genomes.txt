@@ -1,0 +1,66 @@
+genome Anc0
+twoBitPath Anc0/Anc0.2bit
+trackDb Anc0/trackDb.txt
+groups groups.txt
+htmlPath Anc0/description.html
+description Anc0
+organism Anc0
+orderKey 4800
+scientificName Anc0
+defaultPos Anc0refChr24:1-1000
+
+genome bayanus_uvarum_strain_CBS7001
+twoBitPath bayanus_uvarum_strain_CBS7001/bayanus_uvarum_strain_CBS7001.2bit
+trackDb bayanus_uvarum_strain_CBS7001/trackDb.txt
+groups groups.txt
+htmlPath bayanus_uvarum_strain_CBS7001/description.html
+description bayanus_uvarum_strain_CBS7001
+organism bayanus_uvarum_strain_CBS7001
+orderKey 4800
+scientificName bayanus_uvarum_strain_CBS7001
+defaultPos 1_scaffold2_907341bp:1-1000
+
+genome cerevisiae_strain_S288C
+twoBitPath cerevisiae_strain_S288C/cerevisiae_strain_S288C.2bit
+trackDb cerevisiae_strain_S288C/trackDb.txt
+groups groups.txt
+htmlPath cerevisiae_strain_S288C/description.html
+description cerevisiae_strain_S288C
+organism cerevisiae_strain_S288C
+orderKey 4800
+scientificName cerevisiae_strain_S288C
+defaultPos ref_NC_001136_org_Saccharomyces_cerevisiae_strain_S288C_moltype_genomic_chromosome_IV:1-1000
+
+genome cerevisiae_strain_SK1
+twoBitPath cerevisiae_strain_SK1/cerevisiae_strain_SK1.2bit
+trackDb cerevisiae_strain_SK1/trackDb.txt
+groups groups.txt
+htmlPath cerevisiae_strain_SK1/description.html
+description cerevisiae_strain_SK1
+organism cerevisiae_strain_SK1
+orderKey 4800
+scientificName cerevisiae_strain_SK1
+defaultPos NCSL01000001.1_569708:1-1000
+
+genome cerevisiae_strain_W303
+twoBitPath cerevisiae_strain_W303/cerevisiae_strain_W303.2bit
+trackDb cerevisiae_strain_W303/trackDb.txt
+groups groups.txt
+htmlPath cerevisiae_strain_W303/description.html
+description cerevisiae_strain_W303
+organism cerevisiae_strain_W303
+orderKey 4800
+scientificName cerevisiae_strain_W303
+defaultPos scf7180000000098_quiver:1-1000
+
+genome cerevisiae_strain_g833-1B
+twoBitPath cerevisiae_strain_g833-1B/cerevisiae_strain_g833-1B.2bit
+trackDb cerevisiae_strain_g833-1B/trackDb.txt
+groups groups.txt
+htmlPath cerevisiae_strain_g833-1B/description.html
+description cerevisiae_strain_g833-1B
+organism cerevisiae_strain_g833-1B
+orderKey 4800
+scientificName cerevisiae_strain_g833-1B
+defaultPos gi_696436624_gb_JRIH01000084.1_Saccharomyces_cerevisiae_strain_g833-1B_scaffold-103_whole_genome_sequence:1-1000
+
