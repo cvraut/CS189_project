@@ -1,0 +1,5 @@
+S288C_reference.fasta
+suvarum_cbs7001.fasta
+g833-1B_reference.fasta
+SK1_reference.fasta
+W303_reference.fasta
