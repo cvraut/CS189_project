@@ -28,7 +28,7 @@ echo "$(REF)"
 echo "${SEED}"
 
 nucmer --maxmatch -c 100 -p ${SEED} ${REF} ${SEED}
-mummerplot --png -f --filter ${SEED}.delta -R ${REF} -Q ${SEED} --prefix=${SEED}
+mummerplot --png --fat --layout --filter ${SEED}.delta -R ${REF} -Q ${SEED} --prefix=${SEED}
 
 conda deactivate
 
