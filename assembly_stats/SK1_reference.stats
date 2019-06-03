@@ -1,0 +1,10 @@
+stats for data/SK1_reference.fasta
+sum = 11310505, n = 106, ave = 106702.88, largest = 569708
+N50 = 276687, n = 15
+N60 = 212026, n = 20
+N70 = 146725, n = 27
+N80 = 107053, n = 36
+N90 = 66457, n = 49
+N100 = 793, n = 106
+N_count = 47713
+Gaps = 249

@@ -1,0 +1,10 @@
+stats for data/W303_reference.fasta
+sum = 12370681, n = 30, ave = 412356.03, largest = 1538192
+N50 = 777787, n = 6
+N60 = 743878, n = 8
+N70 = 601944, n = 10
+N80 = 479216, n = 12
+N90 = 271202, n = 15
+N100 = 21427, n = 30
+N_count = 0
+Gaps = 0

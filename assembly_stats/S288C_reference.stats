@@ -1,0 +1,10 @@
+stats for data/S288C_reference.fasta
+sum = 12157105, n = 17, ave = 715123.82, largest = 1531933
+N50 = 924431, n = 6
+N60 = 813184, n = 7
+N70 = 745751, n = 9
+N80 = 576874, n = 11
+N90 = 439888, n = 13
+N100 = 85779, n = 17
+N_count = 0
+Gaps = 0
