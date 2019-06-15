@@ -11,10 +11,7 @@
 ### -e
 #$ -pe openmp 8-32
 
-source /data/users/beoungl/bin/.miniconda3testrc
-cd /pub/${USER}/CS189_backup/data
-conda --version
-conda activate project1
+conda activate cg_yeast
 
 echo "Running nucmer"
 

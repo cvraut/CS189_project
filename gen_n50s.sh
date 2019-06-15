@@ -1,6 +1,4 @@
-source ~/.miniconda3rc
 conda activate cg_yeast
-cd /pub/craut/CS189_project
 mkdir assembly_stats
 assembly-stats data/SK1_reference.fasta > assembly_stats/SK1_reference.stats
 assembly-stats data/S288C_reference.fasta > assembly_stats/S288C_reference.stats

@@ -10,9 +10,6 @@
 ### -e
 #$ -pe openmp 2  ## for multithreaded applications. pe openmp INT, integer is # of cores
 
-source ~/.miniconda3rc
-cd /pub/${USER}/CS189_project
-conda --version
 conda activate cg_yeast
 ## cactus -h
 ## SatsumaSynteny2 -h
