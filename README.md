@@ -19,6 +19,7 @@ Main Programs Used:
  - Clustalw (phylogeny tree)
 
 # Pipeline
+```
 (2)Data --> (3)Preprocess --+--> (4)Assembly Stats
                             |
                             +--> (5)Satsuma2 --> Chromosomepaint
@@ -26,6 +27,7 @@ Main Programs Used:
                             +--> (6)Nucmer --> Mummerplot
                             |
                             +--> (7)BLAST --> ClustalW --> Etetoolkit
+```
 
 # Pipeline Steps
 ## 1) setting up conda env
@@ -51,7 +53,7 @@ The N50 of the genomes were retreived through the Assembly stats program by runn
 ```
 assembly-stats "genome.fasta" > "output.stats"
 ```
-![N50 Table](/pics/n50.png)
+![N50 Table](/pics/n50.PNG)
 
 ## 5) Synteny Maps
 The Synteny maps consisted of 2 main processes:
@@ -64,7 +66,7 @@ The Synteny maps consisted of 2 main processes:
  BlockDisplaySatsuma -i outputs/"new dir"/satsuma_summary.chained.out -t data/"reference.fasta" -q data/"query.fasta" > "output.out"
  ChromosomePaint -d 10 -s 400 -i "output.out" -o "img.ps"
  ```
- ![Synteny Map](/pics/syn_map.png)
+ ![Synteny Map](/pics/syn_map.PNG)
 
  ## 6) Identifying Structural Variants
  The mummerplots (like satsuma) follow 2 main steps [bash script](https://github.com/cvraut/CS189_project/blob/chinmay/qsub_nucmer.sh)
@@ -76,7 +78,7 @@ The Synteny maps consisted of 2 main processes:
   ```
   mummerplot --png --fat --layout --filter ${SEED}.delta -R ${REF} -Q ${SEED} --prefix=${SEED}
   ```
-  ![Mummerplot](/pics/mummerplot.png)
+  ![Mummerplot](/pics/mummerplot.PNG)
 
 ## 7) Producing the Phylogeny Tree
 Producing the phylogeny tree was rather involved and required the use of many webtools to acquire the data
@@ -86,7 +88,7 @@ Producing the phylogeny tree was rather involved and required the use of many we
   clustalw < clustalw.in
   ```
   3. Then we visualized the tree using the [web etetoolkit](http://etetoolkit.org/treeview/)
-  ![Tree](/pics/tree.png)
+  ![Tree](/pics/tree.PNG)
 
 # Conclusion
 refer to the [writeup](https://docs.google.com/document/d/1KNQ6TGLGn5cANC1CSuzZIuPjTDEG9VN8L9dKRxzwwns/edit) for conclusion and analysis.
