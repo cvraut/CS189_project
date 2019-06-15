@@ -41,6 +41,7 @@ dependencies:
   - cffi=1.12.2=py27hf0e25f4_1
   - cgcloud-lib=1.6.0=py27_2
   - chardet=3.0.4=py27_1003
+  - clustalw=2.1=h6bb024c_4
   - cryptography=2.5=py27hb7f436b_1
   - curl=7.64.0=h646f8bb_0
   - cwltest=1.0.20180601100346=py_0
